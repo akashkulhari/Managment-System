@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>IPL Players</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Add New Players</h1>
+        <form action="AddPlayerServlet" method="post">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" placeholder="Enter Name" required/></td>
+        </tr>
+
+        <tr>
+            <td>Country:</td>
+            <td>
+                <select name="country" required>
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="India">India</option>
+                    <option value="England">England</option>
+                    <option value="Australia">Australia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Role:</td>
+            <td>
+                <select name="role" required>
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="Batsman">Batsman</option>
+                    <option value="Bowler">Bowler</option>
+                    <option value="All-rounder">All-rounder</option>
+                    <option value="Wicketkeeper">Wicketkeeper</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Team:</td>
+            <td>
+                <select name="team" required>
+                    <option value="" disabled selected>Select Team</option>
+                    <option value="CSK">CSK</option>
+                    <option value="MI">MI</option>
+                    <option value="RCB">RCB</option>
+                    <option value="RR">RR</option>
+                    <option value="KKR">KKR</option>
+                    <option value="LSG">LSG</option>
+                    <option value="PBKS">PBKS</option>
+                    <option value="GT">GT</option>
+                    <option value="DC">DC</option>
+                    <option value="SRH">SRH</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="submit" value="Save Player"/></td>
+        </tr>
+    </table>
+</form>
+
+<br/>
+
+<a href="ViewPlayerServlet?page=1">View Players</a>
+        
+    </body>
+</html>
